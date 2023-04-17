@@ -1,0 +1,36 @@
+.hero{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: url("https://valentinefernandes.github.io/DentalClinic-Website/images/home-bg.jpg");
+    z-index: 1;
+    filter: brightness(0.90);
+}
+.p-hero{
+    position: absolute;
+    top: 45%;
+    margin-left: 10%;
+    max-width: 600px;
+}
+.t-btn{
+    display: none;
+}
+@media (max-width: 1440px) {
+    .hero{
+        background-position: center;
+    }
+}
+@media (max-width: 860px){
+    .hero{
+        background: url('https://media.istockphoto.com/id/621348814/es/foto/papel-de-acuarela-de-textura-blanca.jpg?s=612x612&w=0&k=20&c=TnvgOxxVPzoUTLlC7Q5i-YFJY6KwaE9PGxbhr6-8mEA=');
+    }
+    .p-hero{
+        top: 30%;
+    }
+    .t-btn{
+        display: block;
+    }
+    .s-hero{
+        margin-bottom: 3rem;
+    }
+}

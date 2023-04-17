@@ -1,0 +1,9 @@
+#ubicacion{
+    margin-top: 100px;
+    width: 100vw;
+    height: calc(100vh - 100px);
+}
+.map{
+    width: 100%;
+    height: 100%;
+}

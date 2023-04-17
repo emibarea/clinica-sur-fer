@@ -1,0 +1,122 @@
+.navbar{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    z-index: 4;
+}
+.nav{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.navbefore{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.l-nav{
+    height: 80%;
+    overflow-y: hidden;
+}
+.l-nav > img{
+    height: 100%;
+    filter:invert(100);
+}
+.r-nav > ul{
+    display: flex;
+    list-style: none;
+}
+.r-nav > ul > li{
+    margin: 1rem;
+}
+ul > li > a{
+    text-decoration: none;
+    color: #000;
+    font-size: large;
+}
+ul > li > a:hover{
+    color: #67ad8e;
+    transition: 300ms ease-in-out;
+}
+button{
+    padding: 1rem;
+    background-color: #7ac1a1;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #fff;
+    color: #67ad8e;
+    transition: 500ms ease-in-out;
+}
+.eng{
+    cursor: pointer;
+}
+.eng:hover{
+    color: #67ad8e;
+    transition: 300ms ease-in-out;
+}
+.menu-container{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+@media (max-width: 860px) {
+    .navbar{
+        justify-content: space-between;
+    }
+    .r-nav > ul{
+        display: none;
+    }
+    .menu-container{
+        display: block;
+    }
+    .menu{
+        font-size: 3rem;
+        z-index: 0;
+        cursor: pointer;
+    }
+    .a-nav{
+        display: none;
+    }
+    .pop-up, .filter{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .filter{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .pop-up{    
+        width: 70vw;
+        height: 50vh;
+        background-color: rgba(255, 255, 255, 1);
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+    }
+    .pop-up > ul {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .close-m{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 1.5rem;
+        color: #67ad8e;
+    }
+}
